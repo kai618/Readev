@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Readev</string>
+    <string name="find_beer">Find Beers!</string>
+    <string name="brands">No beers selected</string>
+    <string name="enter_message">Enter a message</string>
+    <string name="send">Send</string>
+    <string-array name="beer_colors">
+        <item>light</item>
+        <item>amber</item>
+        <item>brown</item>
+        <item>dark</item>
+    </string-array>
+</resources>
