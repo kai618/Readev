@@ -3,12 +3,20 @@ package com.kai.readev;
 import android.os.Handler;
 
 interface TickListener {
-    void onTick(long h, long mm, long ss);
+    void onTick(long sec);
 }
 
 class StopWatch {
     private long sec = 0;
     private boolean running = false;
+
+    long getSeconds() {
+        return sec;
+    }
+
+    void setSeconds(long sec) {
+        this.sec = sec;
+    }
 
     public void start(TickListener listener) {
         running = true;
@@ -18,10 +26,7 @@ class StopWatch {
             public void run() {
                 if (!running) return;
                 sec++;
-                long h = sec / 3600;
-                long mm = (sec % 3600) / 60;
-                long ss = sec % 60;
-                listener.onTick(h, mm, ss);
+                listener.onTick(sec);
                 handler.postDelayed(this, 1000);
             }
         }, 1000);
