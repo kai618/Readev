@@ -4,6 +4,10 @@
     <string name="brands">No beers selected</string>
     <string name="enter_message">Enter a message</string>
     <string name="send">Send</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="reset">Reset</string>
+    <string name="watch_init">0:00:00</string>
     <string-array name="beer_colors">
         <item>light</item>
         <item>amber</item>
