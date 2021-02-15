@@ -8,18 +8,30 @@
     tools:context=".CreateMessageActivity">
 
     <EditText
-        android:id="@+id/message_input"
+        android:id="@+id/to_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="20dp"
+        android:autofillHints="to"
+        android:hint="@string/to"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/message_input"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
         android:autofillHints="message"
         android:hint="@string/enter_message"
         android:inputType="text" />
+
 
     <Button
         android:id="@+id/send_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="end"
         android:onClick="onSendMessage"
         android:text="@string/send" />
+
 </androidx.appcompat.widget.LinearLayoutCompat>

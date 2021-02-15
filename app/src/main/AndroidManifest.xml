@@ -9,13 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Readev">
-        <activity android:name=".StopWatchActivity">
+        <activity android:name=".DuckActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".StopWatchActivity" />
         <activity android:name=".ReceiveMessageActivity" />
         <activity android:name=".CreateMessageActivity" />
         <activity android:name=".BeerActivity" />
