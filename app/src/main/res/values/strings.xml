@@ -9,6 +9,8 @@
     <string name="reset">Reset</string>
     <string name="watch_init">0:00:00</string>
     <string name="to">To</string>
+    <string name="create_order">Create Order</string>
+    <string name="create_order_title">Create Order</string>
     <string-array name="beer_colors">
         <item>light</item>
         <item>amber</item>

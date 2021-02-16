@@ -9,15 +9,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Readev">
-        <activity android:name=".chap7.DrinkActivity"></activity>
-        <activity android:name=".chap7.DrinkCategoryActivity" />
-        <activity android:name=".chap7.TopMenuActivity">
+        <activity
+            android:name=".chap8.OrderActivity"
+            android:label="@string/create_order"
+            android:parentActivityName=".chap8.ActionBarActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".chap8.ActionBarActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".chap7.DrinkActivity" />
+        <activity
+            android:name=".chap7.DrinkCategoryActivity"
+            android:label="Drinks" />
+        <activity
+            android:name=".chap7.TopMenuActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
         <activity android:name=".ConstraintLayoutActivity" />
         <activity android:name=".DuckActivity" />
         <activity android:name=".StopWatchActivity" />

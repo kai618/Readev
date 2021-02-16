@@ -22,6 +22,8 @@ public class DrinkActivity extends AppCompatActivity {
         int id = intent.getIntExtra(DRINK_ID, 0);
 
         Drink drink = DrinkManager.drinks[id];
+        setTitle(drink.getName());
+
 
         ImageView drinkImage = findViewById(R.id.drink_image);
         TextView drinkName = findViewById(R.id.drink_name);
