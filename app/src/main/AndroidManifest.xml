@@ -10,19 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Readev">
         <activity
-            android:name=".chap8.OrderActivity"
-            android:label="@string/create_order"
-            android:parentActivityName=".chap8.ActionBarActivity"
-            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
-        <activity
-            android:name=".chap8.ActionBarActivity"
-            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+            android:name=".chap9.WorkoutDetailActivity"
+            android:label="Workout Detail Activity">
+
+        </activity>
+        <activity android:name=".chap9.WorkoutListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".chap8.OrderActivity"
+            android:label="@string/create_order"
+            android:parentActivityName=".chap8.ActionBarActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".chap8.ActionBarActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
         <activity android:name=".chap7.DrinkActivity" />
         <activity
             android:name=".chap7.DrinkCategoryActivity"
