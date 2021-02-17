@@ -3,6 +3,7 @@ package com.kai.readev;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -62,6 +63,10 @@ public class StopWatchActivity extends AppCompatActivity {
         wasRunning = false;
         watch.reset();
         tv.setText(R.string.watch_init);
+    }
+
+    public void onNavigate(View view) {
+        startActivity(new Intent(this, BeerActivity.class));
     }
 
     @Override

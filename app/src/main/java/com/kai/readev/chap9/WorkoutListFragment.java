@@ -29,13 +29,13 @@ public class WorkoutListFragment extends ListFragment {
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         listener = (OnItemClickListener) context;
-        Log.d("frag", "onAttach");
+        Log.i("life", "frag-onAttach");
     }
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d("frag", "onCreate");
+        Log.i("life", "frag-onCreate");
     }
 
     @Override
@@ -47,62 +47,62 @@ public class WorkoutListFragment extends ListFragment {
                         WorkoutHandler.workouts
                 );
         setListAdapter(adapter);
-        Log.d("frag", "onCreateView");
+        Log.i("life", "frag-onCreateView");
         return super.onCreateView(inflater, container, savedInstanceState);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        Log.d("frag", "onActivityCreated");
+        Log.i("life", "frag-onActivityCreated");
     }
 
     @Override
     public void onStart() {
         super.onStart();
-        Log.d("frag", "onStart");
+        Log.i("life", "frag-onStart");
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        Log.d("frag", "onResume");
+        Log.i("life", "frag-onResume");
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        Log.d("frag", "onPause");
+        Log.i("life", "frag-onPause");
     }
 
     @Override
     public void onStop() {
         super.onStop();
-        Log.d("frag", "onStop");
+        Log.i("life", "frag-onStop");
     }
 
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        Log.d("frag", "onDestroyView");
+        Log.i("life", "frag-onDestroyView");
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-        Log.d("frag", "onDestroy");
+        Log.i("life", "frag-onDestroy");
     }
 
     @Override
     public void onDetach() {
         super.onDetach();
-        Log.d("frag", "onDetach");
+        Log.i("life", "frag-onDetach");
     }
 
     @Override
     public void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
-        Log.d("frag", "onSaveInstanceState");
+        Log.i("life", "frag-onSaveInstanceState");
     }
 
     @Override

@@ -38,7 +38,9 @@
             android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
         <activity android:name=".ConstraintLayoutActivity" />
         <activity android:name=".DuckActivity" />
-        <activity android:name=".StopWatchActivity" />
+        <activity android:name=".StopWatchActivity">
+
+        </activity>
         <activity android:name=".ReceiveMessageActivity" />
         <activity android:name=".CreateMessageActivity" />
         <activity android:name=".BeerActivity" />

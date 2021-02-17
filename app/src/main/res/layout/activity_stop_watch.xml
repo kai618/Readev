@@ -37,4 +37,11 @@
         android:layout_height="wrap_content"
         android:onClick="onReset"
         android:text="@string/reset" />
+
+    <Button
+        android:id="@+id/to_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onNavigate"
+        android:text="To" />
 </androidx.appcompat.widget.LinearLayoutCompat>
