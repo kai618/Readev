@@ -51,60 +51,61 @@ public class WorkoutListFragment extends ListFragment {
         return super.onCreateView(inflater, container, savedInstanceState);
     }
 
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        Log.i("life", "frag-onActivityCreated");
-    }
-
-    @Override
-    public void onStart() {
-        super.onStart();
-        Log.i("life", "frag-onStart");
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        Log.i("life", "frag-onResume");
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-        Log.i("life", "frag-onPause");
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-        Log.i("life", "frag-onStop");
-    }
-
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        Log.i("life", "frag-onDestroyView");
-    }
-
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        Log.i("life", "frag-onDestroy");
-    }
-
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        Log.i("life", "frag-onDetach");
-    }
-
-    @Override
-    public void onSaveInstanceState(@NonNull Bundle outState) {
-        super.onSaveInstanceState(outState);
-        Log.i("life", "frag-onSaveInstanceState");
-    }
-
+    //
+//    @Override
+//    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+//        super.onActivityCreated(savedInstanceState);
+//        Log.i("life", "frag-onActivityCreated");
+//    }
+//
+//    @Override
+//    public void onStart() {
+//        super.onStart();
+//        Log.i("life", "frag-onStart");
+//    }
+//
+//    @Override
+//    public void onResume() {
+//        super.onResume();
+//        Log.i("life", "frag-onResume");
+//    }
+//
+//    @Override
+//    public void onPause() {
+//        super.onPause();
+//        Log.i("life", "frag-onPause");
+//    }
+//
+//    @Override
+//    public void onStop() {
+//        super.onStop();
+//        Log.i("life", "frag-onStop");
+//    }
+//
+//    @Override
+//    public void onDestroyView() {
+//        super.onDestroyView();
+//        Log.i("life", "frag-onDestroyView");
+//    }
+//
+//    @Override
+//    public void onDestroy() {
+//        super.onDestroy();
+//        Log.i("life", "frag-onDestroy");
+//    }
+//
+//    @Override
+//    public void onDetach() {
+//        super.onDetach();
+//        Log.i("life", "frag-onDetach");
+//    }
+//
+//    @Override
+//    public void onSaveInstanceState(@NonNull Bundle outState) {
+//        super.onSaveInstanceState(outState);
+//        Log.i("life", "frag-onSaveInstanceState");
+//    }
+//
     @Override
     public void onListItemClick(@NonNull ListView l, @NonNull View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
