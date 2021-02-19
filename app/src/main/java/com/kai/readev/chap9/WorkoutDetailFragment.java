@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.kai.readev.R;
+import com.kai.readev.chap11.StopwatchFragment;
 
 public class WorkoutDetailFragment extends Fragment {
     private int id;
@@ -35,6 +37,11 @@ public class WorkoutDetailFragment extends Fragment {
         super.onCreate(savedInstanceState);
         if (savedInstanceState != null) {
             id = savedInstanceState.getInt(ID);
+        } else {
+            StopwatchFragment stopwatchFrag = new StopwatchFragment();
+            FragmentTransaction ft = getChildFragmentManager().beginTransaction();
+            ft.replace(R.id.stopwatch_container, stopwatchFrag);
+            ft.commit();
         }
     }
 

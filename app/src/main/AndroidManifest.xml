@@ -9,17 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Readev">
-        <activity android:name=".chap11.TempActivity">
+        <activity android:name=".chap11.TempActivity"></activity>
+        <activity
+            android:name=".chap9.WorkoutDetailActivity"
+            android:label="Workout Detail Activity" />
+        <activity android:name=".chap9.WorkoutListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".chap9.WorkoutDetailActivity"
-            android:label="Workout Detail Activity" />
-        <activity android:name=".chap9.WorkoutListActivity" />
         <activity
             android:name=".chap8.OrderActivity"
             android:label="@string/create_order"
