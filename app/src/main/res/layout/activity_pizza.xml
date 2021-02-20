@@ -16,11 +16,11 @@
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
         android:background="?attr/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
         app:tabSelectedTextColor="?attr/colorOnPrimary"
-        app:tabTextColor="@color/blue_100"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        app:tabTextColor="@color/blue_100" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/pager"
