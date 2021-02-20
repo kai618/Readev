@@ -23,5 +23,25 @@
         <item>Food</item>
         <item>Stores</item>
     </string-array>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="bits_pizzas">Bits and Pizzas</string>
+    <string-array name="pizzas">
+        <item>Diavolo</item>
+        <item>Funghi</item>
+    </string-array>
+    <string-array name="pasta">
+        <item>Spaghetti Bolognese</item>
+        <item>Lasagne</item>
+    </string-array>
+    <string-array name="stores">
+        <item>Cambridge</item>
+        <item>Sebastopol</item>
+    </string-array>
+
+    <string name="home_tab">Home</string>
+    <string name="pizza_tab">Pizzas</string>
+    <string name="pasta_tab">Pasta</string>
+    <string name="store_tab">Stores</string>
 </resources>

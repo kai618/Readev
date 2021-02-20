@@ -9,17 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Readev">
-        <activity android:name=".chap11.TempActivity"></activity>
         <activity
-            android:name=".chap9.WorkoutDetailActivity"
-            android:label="Workout Detail Activity" />
-        <activity android:name=".chap9.WorkoutListActivity">
+            android:name=".chap12.PizzaActivity"
+            android:label="@string/bits_pizzas"
+            android:theme="@style/Theme.Readev">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".chap11.TempActivity" />
+        <activity
+            android:name=".chap9.WorkoutDetailActivity"
+            android:label="Workout Detail Activity" />
+        <activity android:name=".chap9.WorkoutListActivity" />
         <activity
             android:name=".chap8.OrderActivity"
             android:label="@string/create_order"
@@ -28,6 +32,7 @@
         <activity
             android:name=".chap8.ActionBarActivity"
             android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+
         <activity android:name=".chap7.DrinkActivity" />
         <activity
             android:name=".chap7.DrinkCategoryActivity"
