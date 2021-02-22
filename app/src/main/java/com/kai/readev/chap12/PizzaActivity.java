@@ -1,28 +1,30 @@
 package com.kai.readev.chap12;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
-
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 import com.kai.readev.R;
 import com.kai.readev.chap8.OrderActivity;
 
-import java.util.Arrays;
+import java.util.Stack;
 
 public class PizzaActivity extends AppCompatActivity {
+
+    private final Stack<Integer> tabBackStack = new Stack<>();
+    private ViewPager2 viewPager;
 
     private final Fragment[] pages = new Fragment[]{
             new TopFragment(),
@@ -46,13 +48,19 @@ public class PizzaActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        ViewPager2 pager = findViewById(R.id.pager);
-        pager.setAdapter(new SectionsPagerAdapter(this));
+        viewPager = findViewById(R.id.paper);
+        viewPager.setAdapter(new SectionsPagerAdapter(this));
+        viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+                if (tabBackStack.isEmpty() || tabBackStack.lastElement() != position) tabBackStack.add(position);
+            }
+        });
 
         TabLayout tabLayout = findViewById(R.id.tabs);
         new TabLayoutMediator(
                 tabLayout,
-                pager,
+                viewPager,
                 (tab, position) -> tab.setText(getResources().getString(titleRes[position]))
         ).attach();
     }
@@ -72,9 +80,17 @@ public class PizzaActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public void onBackPressed() {
+        if (tabBackStack.size() == 1) {
+            super.onBackPressed();
+        } else {
+            tabBackStack.pop();
+            viewPager.setCurrentItem(tabBackStack.lastElement());
+        }
+    }
+
     private class SectionsPagerAdapter extends FragmentStateAdapter {
-
-
         public SectionsPagerAdapter(@NonNull FragmentActivity fragmentActivity) {
             super(fragmentActivity);
         }
