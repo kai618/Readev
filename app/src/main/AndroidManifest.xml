@@ -9,6 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Readev">
+        <activity android:name=".chap14.Chap14FeedbackActivity"></activity>
+        <activity android:name=".chap14.Chap14HelpActivity" />
+        <activity android:name=".chap14.Chap14MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".chap13.PizzaDetailActivity"
             android:parentActivityName=".chap12.PizzaActivity" />
@@ -16,13 +25,7 @@
             android:name=".chap12.PizzaActivity"
             android:label="@string/bits_pizzas"
             android:launchMode="singleTop"
-            android:theme="@style/Theme.Readev">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/Theme.Readev" />
         <activity android:name=".chap11.TempActivity" />
         <activity
             android:name=".chap9.WorkoutDetailActivity"
