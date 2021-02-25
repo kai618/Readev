@@ -4,14 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.kai.readev.R;
 
-public class DrinkCategoryActivity extends AppCompatActivity {
+public class Chap7DrinkCategoryActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,8 +21,8 @@ public class DrinkCategoryActivity extends AppCompatActivity {
                 this, android.R.layout.simple_list_item_1, DrinkManager.drinks
         );
         AdapterView.OnItemClickListener itemClickListener = (parent, view, position, id) -> {
-            Intent intent = new Intent(DrinkCategoryActivity.this, DrinkActivity.class);
-            intent.putExtra(DrinkActivity.DRINK_ID, (int) id);
+            Intent intent = new Intent(this, Chap7DrinkActivity.class);
+            intent.putExtra(Chap7DrinkActivity.DRINK_ID, (int) id);
             startActivity(intent);
         };
 

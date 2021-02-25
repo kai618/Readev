@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".chap7.DrinkCategoryActivity">
+    tools:context=".chap7.Chap7DrinkCategoryActivity">
 
     <ListView
         android:id="@+id/drink_cat_list"

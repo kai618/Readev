@@ -9,7 +9,7 @@ import android.widget.ListView;
 
 import com.kai.readev.R;
 
-public class TopMenuActivity extends AppCompatActivity {
+public class Chap7TopMenuActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,7 @@ public class TopMenuActivity extends AppCompatActivity {
 
         AdapterView.OnItemClickListener itemClickListener = (parent, view, position, id) -> {
             if (position == 0) {
-                Intent intent = new Intent(TopMenuActivity.this, DrinkCategoryActivity.class);
+                Intent intent = new Intent(Chap7TopMenuActivity.this, Chap7DrinkCategoryActivity.class);
                 startActivity(intent);
             }
         };

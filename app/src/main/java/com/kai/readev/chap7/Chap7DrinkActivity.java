@@ -9,9 +9,9 @@ import android.widget.TextView;
 
 import com.kai.readev.R;
 
-public class DrinkActivity extends AppCompatActivity {
+public class Chap7DrinkActivity extends AppCompatActivity {
 
-    public static final String DRINK_ID = "dId";
+    public static final String DRINK_ID = "drinkId";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,14 +24,12 @@ public class DrinkActivity extends AppCompatActivity {
         Drink drink = DrinkManager.drinks[id];
         setTitle(drink.getName());
 
-
         ImageView drinkImage = findViewById(R.id.drink_image);
-        TextView drinkName = findViewById(R.id.drink_name);
-        TextView drinkDescription = findViewById(R.id.drink_description);
-
         drinkImage.setImageResource(drink.getImageResId());
         drinkImage.setContentDescription(drink.getName());
+        TextView drinkName = findViewById(R.id.drink_name);
         drinkName.setText(drink.getName());
+        TextView drinkDescription = findViewById(R.id.drink_description);
         drinkDescription.setText(drink.getDescription());
     }
 }
