@@ -9,9 +9,9 @@
     <ImageView
         android:id="@+id/drink_image"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:layout_margin="16dp"
-        android:scaleType="fitCenter"
+        android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,8 +21,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:textSize="20sp"
         android:textStyle="bold"
-        android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/drink_image" />
 
@@ -34,4 +34,13 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/drink_name" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckFavorite"
+        android:text="@string/favorite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drink_description" />
 </androidx.constraintlayout.widget.ConstraintLayout>
