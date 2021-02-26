@@ -9,7 +9,7 @@ import androidx.annotation.Nullable;
 
 import com.kai.readev.R;
 
-class StarbuzzDatabaseHelper extends SQLiteOpenHelper {
+public class StarbuzzDatabaseHelper extends SQLiteOpenHelper {
     private static final String DB_NAME = "starbuzz";
     private static final int DB_VERSION = 2;
 
