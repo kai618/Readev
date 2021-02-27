@@ -41,8 +41,7 @@ public class StarbuzzDatabaseHelper extends SQLiteOpenHelper {
                     "_id INTEGER PRIMARY KEY AUTOINCREMENT, " +
                     "NAME TEXT, " +
                     "DESCRIPTION TEXT, " +
-                    "IMAGE_RESOURCE_ID INTEGER," +
-                    "FAVORITE NUMERIC);");
+                    "IMAGE_RESOURCE_ID INTEGER);");
             insertDrink(db, "Latte", "Espresso and steamed milk", R.drawable.latte);
             insertDrink(db, "Cappuccino", "Espresso, hot milk and steamed-milk foam", R.drawable.cappuccino);
             insertDrink(db, "Filter", "Our best drip coffee", R.drawable.filter);

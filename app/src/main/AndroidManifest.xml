@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kai.readev">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,15 +11,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Readev">
+        <activity android:name=".chap19.Chap19MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".chap19.OdometerService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".chap18.DelayedMessageService"
+            android:exported="false" />
+
         <activity
             android:name=".chap14.Chap14FeedbackActivity"
             android:parentActivityName=".chap14.Chap14MainActivity" />
         <activity
             android:name=".chap14.Chap14HelpActivity"
             android:parentActivityName=".chap14.Chap14MainActivity" />
-        <activity android:name=".chap14.Chap14MainActivity">
-
-        </activity>
+        <activity android:name=".chap14.Chap14MainActivity" />
         <activity
             android:name=".chap13.PizzaDetailActivity"
             android:parentActivityName=".chap12.PizzaActivity" />
@@ -46,13 +62,7 @@
         <activity
             android:name=".chap7.Chap7TopMenuActivity"
             android:label="StarBuzz"
-            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
         <activity android:name=".ConstraintLayoutActivity" />
         <activity android:name=".DuckActivity" />
         <activity android:name=".StopWatchActivity" />
