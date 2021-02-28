@@ -26,7 +26,7 @@ public class OdometerService extends Service {
     private LocationListener listener;
     private final IBinder binder = new OdometerBinder();
     private LocationManager locationManager;
-    private static final String PERMISSION_STRING = Manifest.permission.ACCESS_FINE_LOCATION;
+    static final String PERMISSION_STRING = Manifest.permission.ACCESS_FINE_LOCATION;
     private static double distanceInMeters;
     private static Location lastLocation = null;
 
