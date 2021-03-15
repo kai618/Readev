@@ -58,9 +58,6 @@ public class Chap14MainActivity extends AppCompatActivity {
         Intent intent = null;
 
         switch (item.getItemId()) {
-            case R.id.nav_inbox:
-                fragment = new Chap14InboxFragment();
-                break;
             case R.id.nav_drafts:
                 fragment = new Chap14DraftsFragment();
                 break;

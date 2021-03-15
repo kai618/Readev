@@ -84,6 +84,6 @@ public class OdometerService extends Service {
     }
 
     public double getDistance() {
-        return distanceInMeters / 1609.344;
+        return distanceInMeters;
     }
 }

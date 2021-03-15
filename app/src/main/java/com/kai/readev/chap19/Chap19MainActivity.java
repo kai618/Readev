@@ -102,7 +102,7 @@ public class Chap19MainActivity extends AppCompatActivity {
             public void run() {
                 if (bound && odometerService != null) {
                     double distance = odometerService.getDistance();
-                    String str = String.format(Locale.getDefault(), "%.2f miles", distance);
+                    String str = String.format(Locale.getDefault(), "%.2f m", distance);
                     tv.setText(str);
                     handler.postDelayed(this, 1000);
                 }
